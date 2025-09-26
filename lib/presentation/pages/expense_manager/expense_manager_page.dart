@@ -2,13 +2,13 @@ import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 
 @RoutePage()
-class FeedPage extends StatelessWidget {
-  const FeedPage({super.key});
+class ExpenseManagerPage extends StatelessWidget {
+  const ExpenseManagerPage({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.red,
+      backgroundColor: Colors.green,
     );
   }
 }

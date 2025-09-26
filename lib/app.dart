@@ -1,3 +1,5 @@
+import 'package:auto_route/auto_route.dart';
+import 'package:fin_enlight/core/core.dart';
 import 'package:flutter/material.dart';
 
 class FinEnlightApp extends StatelessWidget {
@@ -6,6 +8,12 @@ class FinEnlightApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
+      debugShowCheckedModeBanner: false,
+      routerConfig: context.dependencies<RootStackRouter>().config(
+            navigatorObservers: () => [
+              AutoRouteObserver(),
+            ],
+          ),
       title: 'FinEnlight',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
