@@ -1,1 +1,1 @@
-export 'shortcuts/padding.dart';
+export 'shortcuts/shortcuts.dart';
