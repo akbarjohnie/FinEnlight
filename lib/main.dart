@@ -1,7 +1,6 @@
 import 'package:fin_enlight/app.dart';
+import 'package:fin_enlight/core/core.dart';
 import 'package:flutter/material.dart';
-
-import 'core/core.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();

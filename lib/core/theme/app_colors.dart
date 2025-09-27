@@ -5,23 +5,23 @@ abstract base class AppColors {
   static const Color transparent = Color(0x00000000);
   static const Color eerieBlack = Color(0xFF1C1C1C);
 
-  /// [GRAY]
+  /// GRAY
   static const Color platinum = Color(0xFFEAEAEA);
   static const Color alabaster = Color(0xFFF8F8F8);
   static const Color gainsboro = Color(0xFFF1F1F1);
   static const Color galleryGray = Color(0xFFEFEFEF);
   static const Color dimGray = Color(0xFF868686);
 
-  /// [BLUE]
+  /// BLUE
   static const Color cornflowerBlue = Color(0xFF537CE8);
   static const Color aliceBlue = Color(0xFFEEF2FD);
 
-  /// [RED]
+  /// RED
   static const Color bittersweet = Color(0xFFFC6B58);
 
   static const Color linen = Color(0xFFFFF0EE);
 
-  /// [YELLOW]
+  /// YELLOW
   static const Color sunglow = Color(0xFFFFD922);
 
   static const Color oldLace = Color(0xFFFFFBE9);
