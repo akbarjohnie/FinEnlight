@@ -20,7 +20,7 @@ class KidsFinanceSection extends StatelessWidget {
             ),
             const SizedBox(width: 8),
             Text(
-              'KIDS FINANCE',
+              'FIN ENLIGHT',
               style: TextStyle(color: Colors.orange, fontWeight: FontWeight.bold, fontSize: 24),
             ),
           ],
