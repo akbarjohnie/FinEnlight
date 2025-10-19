@@ -3,7 +3,7 @@ code_gen:
 
 # Генерация путей к asset-ам
 assets:
-	dart pub global activate flutter_asset_generator; fgen -o lib/assets/resource.g.dart -p --no-preview -w --no-watch
+	dart pub global activate flutter_asset_generator; fgen -o assets/resource.g.dart -p --no-preview -w --no-watch
 
 # Подтягивание зависимостей
 pub_get:
