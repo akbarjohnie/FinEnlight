@@ -1,6 +1,5 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 
 abstract class HomeNavItem {
   const HomeNavItem({
@@ -17,12 +16,7 @@ abstract class HomeNavItem {
     );
   }
 
-  ColorFilter? getIconFilter(bool isActive) => isActive
-      ? const ColorFilter.mode(
-          Color(0xFFF9F9F9),
-          BlendMode.srcIn,
-        )
-      : null;
+  static Color? _getIconColor(bool isActive) => isActive ? const Color(0xFFF9F9F9) : null;
 }
 
 class FeedNavItem extends HomeNavItem {
@@ -30,11 +24,8 @@ class FeedNavItem extends HomeNavItem {
       : super(
           iconBuilder: (isActive) => Icon(
             Icons.home_outlined,
+            color: HomeNavItem._getIconColor(isActive),
           ),
-          // SvgPicture.asset(
-          // R.,
-          //   colorFilter: getIconFilter(isActive),
-          // ),
           routePath: 'feed',
         );
 }
@@ -44,12 +35,8 @@ class ExpenseManagerItem extends HomeNavItem {
       : super(
           iconBuilder: (isActive) => Icon(
             Icons.account_balance_outlined,
+            color: HomeNavItem._getIconColor(isActive),
           ),
-          // SvgPicture.asset(
-          //   R.,
-          //   colorFilter: getIconFilter(isActive),
-          //   matchTextDirection: true,
-          // ),
           routePath: 'expense_manager',
         );
 }
