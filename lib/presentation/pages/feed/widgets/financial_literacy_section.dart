@@ -2,9 +2,9 @@ import 'package:fin_enlight/presentation/pages/feed/widgets/lesson.dart';
 import 'package:flutter/material.dart';
 
 class FinancialLiteracySection extends StatelessWidget {
-  final List<Lesson> lessons;
-
   const FinancialLiteracySection({super.key, required this.lessons});
+
+  final List<Lesson> lessons;
 
   @override
   Widget build(BuildContext context) {

@@ -1,10 +1,6 @@
 import 'package:flutter/material.dart';
 
 class LastLessonSection extends StatelessWidget {
-  final String lessonTitle;
-  final int completedLessons;
-  final int totalLessons;
-
   const LastLessonSection({
     super.key,
     required this.lessonTitle,
@@ -12,9 +8,14 @@ class LastLessonSection extends StatelessWidget {
     required this.totalLessons,
   });
 
+  final String lessonTitle;
+  final int completedLessons;
+  final int totalLessons;
+
+  double get _takeProgress => completedLessons / totalLessons;
+
   @override
   Widget build(BuildContext context) {
-    final progress = completedLessons / totalLessons;
     return Card(
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
       color: Colors.white,
@@ -56,7 +57,7 @@ class LastLessonSection extends StatelessWidget {
               trailing: SizedBox(
                 width: 100,
                 child: LinearProgressIndicator(
-                  value: progress,
+                  value: _takeProgress,
                   backgroundColor: Colors.grey[300],
                   color: Colors.orange,
                 ),

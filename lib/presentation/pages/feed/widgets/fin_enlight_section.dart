@@ -1,3 +1,4 @@
+import 'package:fin_enlight/core/constants/assets.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -14,7 +15,7 @@ class KidsFinanceSection extends StatelessWidget {
         child: Row(
           children: [
             SvgPicture.asset(
-              'assets/svg/logo_bar/logo.svg',
+              Assets.logo, 
               width: 44,
               height: 30,
             ),

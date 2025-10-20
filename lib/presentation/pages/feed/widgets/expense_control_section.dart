@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 
 class ExpenseControlSection extends StatelessWidget {
-  final int lessonsCount;
-  final String duration;
-
   const ExpenseControlSection({
     super.key,
     required this.lessonsCount,
     required this.duration,
   });
+
+  final int lessonsCount;
+  final String duration;
 
   @override
   Widget build(BuildContext context) {
