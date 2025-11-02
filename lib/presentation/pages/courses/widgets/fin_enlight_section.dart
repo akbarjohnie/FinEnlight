@@ -1,4 +1,5 @@
-import 'package:fin_enlight/core/constants/assets.dart';
+import 'package:fin_enlight/assets/resource.g.dart';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -15,12 +16,12 @@ class KidsFinanceSection extends StatelessWidget {
         child: Row(
           children: [
             SvgPicture.asset(
-              Assets.logo, 
+              R.LIB_ASSETS_SVG_LOGO_BAR_LOGO_SVG, 
               width: 44,
               height: 30,
             ),
             const SizedBox(width: 8),
-            Text(
+            const Text(
               'FIN ENLIGHT',
               style: TextStyle(color: Colors.orange, fontWeight: FontWeight.bold, fontSize: 24),
             ),

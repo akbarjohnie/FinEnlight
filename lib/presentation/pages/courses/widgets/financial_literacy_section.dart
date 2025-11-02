@@ -1,10 +1,13 @@
-import 'package:fin_enlight/presentation/pages/feed/widgets/lesson.dart';
+import 'package:fin_enlight/domain/domain.dart';
 import 'package:flutter/material.dart';
 
 class FinancialLiteracySection extends StatelessWidget {
-  const FinancialLiteracySection({super.key, required this.lessons});
+  const FinancialLiteracySection({
+    required this.lessons,
+    super.key,
+  });
 
-  final List<Lesson> lessons;
+  final List<LessonEntity> lessons;
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +19,7 @@ class FinancialLiteracySection extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
+            const Text(
               'Основы финансовой грамотности',
               style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
             ),
@@ -27,21 +30,21 @@ class FinancialLiteracySection extends StatelessWidget {
             ),
             const SizedBox(height: 8),
             ...lessons.map((lesson) => Padding(
-              padding: const EdgeInsets.only(bottom: 8),
-              child: ListTile(
-                contentPadding: EdgeInsets.zero,
-                leading: Icon(Icons.play_circle_outline, color: Colors.black),
-                title: Text(lesson.title),
-                subtitle: Text(lesson.duration),
-                trailing: Row(
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    Icon(Icons.videocam, color: Colors.grey),
-                    Icon(Icons.mic, color: Colors.grey),
-                  ],
-                ),
-              ),
-            )),
+                  padding: const EdgeInsets.only(bottom: 8),
+                  child: ListTile(
+                    contentPadding: EdgeInsets.zero,
+                    leading: const Icon(Icons.play_circle_outline, color: Colors.black),
+                    title: Text(lesson.title),
+                    subtitle: Text(lesson.duration),
+                    trailing: const Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Icon(Icons.videocam, color: Colors.grey),
+                        Icon(Icons.mic, color: Colors.grey),
+                      ],
+                    ),
+                  ),
+                )),
           ],
         ),
       ),

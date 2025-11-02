@@ -30,6 +30,17 @@ class FeedNavItem extends HomeNavItem {
         );
 }
 
+class CoursesNavItem extends HomeNavItem {
+  CoursesNavItem()
+      : super(
+          iconBuilder: (isActive) => Icon(
+            Icons.book_outlined,
+            color: HomeNavItem._getIconColor(isActive),
+          ),
+          routePath: 'courses',
+        );
+}
+
 class ExpenseManagerItem extends HomeNavItem {
   ExpenseManagerItem()
       : super(

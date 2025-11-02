@@ -20,6 +20,10 @@ class AppRouter extends RootStackRouter {
               initial: true,
             ),
             AutoRoute(
+              page: CoursesRoute.page,
+              path: 'courses',
+            ),
+            AutoRoute(
               page: ExpenseManagerRoute.page,
               path: 'expense_manager',
             ),
