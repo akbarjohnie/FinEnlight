@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 
 class LastLessonSection extends StatelessWidget {
   const LastLessonSection({
-    super.key,
     required this.lessonTitle,
     required this.completedLessons,
     required this.totalLessons,
+    super.key,
   });
 
   final String lessonTitle;
@@ -24,17 +24,17 @@ class LastLessonSection extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
+            const Text(
               'Последний урок:',
               style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 8),
             ListTile(
               contentPadding: EdgeInsets.zero,
-              leading: Icon(Icons.play_circle_outline, color: Colors.black),
+              leading: const Icon(Icons.play_circle_outline, color: Colors.black),
               title: Text(
                 lessonTitle,
-                style: TextStyle(
+                style: const TextStyle(
                   color: Color.fromRGBO(29, 27, 32, 1.0),
                   fontFamily: 'Roboto',
                   fontSize: 16,
@@ -45,7 +45,7 @@ class LastLessonSection extends StatelessWidget {
               ),
               subtitle: Text(
                 '$completedLessons из $totalLessons уроков',
-                style: TextStyle(
+                style: const TextStyle(
                   color: Color.fromRGBO(73, 69, 78, 1.0),
                   fontFamily: 'Roboto',
                   fontSize: 14,

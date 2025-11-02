@@ -27,6 +27,7 @@ class _HomePageState extends State<HomePage> {
 
   List<HomeNavItem> get navItems => [
         FeedNavItem(),
+        CoursesNavItem(),
         ExpenseManagerItem(),
       ];
 

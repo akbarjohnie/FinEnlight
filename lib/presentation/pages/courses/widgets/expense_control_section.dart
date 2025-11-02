@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 
 class ExpenseControlSection extends StatelessWidget {
   const ExpenseControlSection({
-    super.key,
     required this.lessonsCount,
     required this.duration,
+    super.key,
   });
 
   final int lessonsCount;
@@ -20,7 +20,7 @@ class ExpenseControlSection extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
+            const Text(
               'Контролирование расходов',
               style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
             ),
@@ -31,10 +31,10 @@ class ExpenseControlSection extends StatelessWidget {
             const SizedBox(height: 8),
             ListTile(
               contentPadding: EdgeInsets.zero,
-              leading: Icon(Icons.play_circle_outline, color: Colors.black),
-              title: Text('Расходы'),
+              leading: const Icon(Icons.play_circle_outline, color: Colors.black),
+              title: const Text('Расходы'),
               subtitle: Text('$lessonsCount урока по $duration'),
-              trailing: Row(
+              trailing: const Row(
                 mainAxisSize: MainAxisSize.min,
                 children: [
                   Icon(Icons.videocam, color: Colors.grey),
@@ -45,10 +45,10 @@ class ExpenseControlSection extends StatelessWidget {
             const SizedBox(height: 8),
             ListTile(
               contentPadding: EdgeInsets.zero,
-              leading: Icon(Icons.play_circle_outline, color: Colors.black),
-              title: Text('Доходы'),
+              leading: const Icon(Icons.play_circle_outline, color: Colors.black),
+              title: const Text('Доходы'),
               subtitle: Text('$lessonsCount урока по $duration'),
-              trailing: Row(
+              trailing: const Row(
                 mainAxisSize: MainAxisSize.min,
                 children: [
                   Icon(Icons.videocam, color: Colors.grey),
